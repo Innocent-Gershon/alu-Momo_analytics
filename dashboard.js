@@ -96,14 +96,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
               label: 'Monthly Summaries (RWF)',
               data: Object.values(monthlySummaries),
-              borderColor: '#28a745', // Green line
-              backgroundColor: 'rgba(40, 167, 69, 0.2)', // Light green fill
-              pointBackgroundColor: '#ffffff', // White points for clarity
-              pointBorderColor: '#28a745', // Green borders for points
-              pointRadius: 6, // Increased point size for better visibility
-              pointHoverRadius: 8, // Slightly bigger on hover for emphasis
-              pointBorderWidth: 3, // Thicker border to enhance clarity
-              borderWidth: 3, // Thicker line for better readability
+              borderColor: '#28a745', 
+              backgroundColor: 'rgba(40, 167, 69, 0.2)', 
+              pointBackgroundColor: '#ffffff', 
+              pointBorderColor: '#28a745', 
+              pointRadius: 6, 
+              pointHoverRadius: 8, 
+              pointBorderWidth: 3, 
+              borderWidth: 3, 
             },
           ],
         },
@@ -112,9 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
           scales: {
             x: {
               ticks: {
-                color: '#000000', // Black labels for visibility
+                color: '#000000', 
                 font: {
-                  size: 13, // Slightly larger font
+                  size: 13, 
                 },
               },
             },
@@ -123,20 +123,20 @@ document.addEventListener('DOMContentLoaded', () => {
               title: {
                 display: true,
                 text: 'Amount (RWF)',
-                color: '#000000', // Black title for visibility
+                color: '#000000', 
                 font: {
-                  size: 15, // Slightly larger font
+                  size: 15, 
                 },
               },
               ticks: {
-                color: '#000000', // Black tick labels for better readability
+                color: '#000000', 
               },
             },
           },
           plugins: {
             legend: {
               labels: {
-                color: '#000000', // Black legend text for readability
+                color: '#000000', 
                 font: {
                   size: 14,
                 },
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
               label: 'Payment Distribution (RWF)',
               data: Object.values(transactionTypes),
-              backgroundColor: ['#36a2eb', '#ff6384'], // Restored original colors
+              backgroundColor: ['#36a2eb', '#ff6384'], 
             },
           ],
         },
