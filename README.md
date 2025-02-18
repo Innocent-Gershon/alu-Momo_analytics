@@ -21,7 +21,6 @@ Users can interact with a **dynamic dashboard** that provides:
 - 📊 **Visualizations**: Interactive charts for transaction analysis.
 - 📄 **Transaction Details**: Click on transactions to view full details.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### 🛠️ Technologies Used
 
@@ -31,8 +30,6 @@ Users can interact with a **dynamic dashboard** that provides:
 - **Deployment**: Render (Backend API)
 
 More details about the documentation can be found [here.](https://docs.google.com/document/d/1KMjd8-TMeAmjDXD6qfU5caxfX96HYlKoCs7RRkP3zCw/edit?tab=t.0#heading=h.vnvp6shwuqn4)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
