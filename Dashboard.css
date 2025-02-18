@@ -1,24 +1,21 @@
-
 .header-content {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  gap: 10px; 
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   color: #0601339a;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 .logo {
-  height: 50px; 
-  width: auto; 
+  height: 50px;
+  width: auto;
 }
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  background-image: url(./images/mtn1.jpg);
 }
 
 header {
@@ -30,7 +27,6 @@ header {
   padding-top: 5px;
 }
 
-
 .filters {
   display: flex;
   gap: 1rem;
@@ -39,7 +35,9 @@ header {
   margin-bottom: 1rem;
 }
 
-.filters input, .filters select, .filters button {
+.filters input,
+.filters select,
+.filters button {
   padding: 0.5rem;
   font-size: 1rem;
 }
@@ -68,4 +66,29 @@ header {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
+}
+
+.transactions-section {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
 }
