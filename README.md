@@ -11,8 +11,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 The **MTN Transactions Dashboard** is a full-stack web application designed to **process, analyze, and visualize mobile money transactions** from **MTN MoMo SMS data**.
 
 This system extracts transaction details from **XML-based SMS messages**, categorizes them into different transaction types (e.g., **Payments, Withdrawals, Bank Transfers**), and stores them in a **PostgreSQL database**.
