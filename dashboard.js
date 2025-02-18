@@ -96,23 +96,66 @@ document.addEventListener('DOMContentLoaded', () => {
             {
               label: 'Monthly Summaries (RWF)',
               data: Object.values(monthlySummaries),
-              borderColor: '#4bc0c0',
+              borderColor: '#28a745', // Green line
+              backgroundColor: 'rgba(40, 167, 69, 0.2)', // Light green fill
+              pointBackgroundColor: '#ffffff', // White points for clarity
+              pointBorderColor: '#28a745', // Green borders for points
+              pointRadius: 6, // Increased point size for better visibility
+              pointHoverRadius: 8, // Slightly bigger on hover for emphasis
+              pointBorderWidth: 3, // Thicker border to enhance clarity
+              borderWidth: 3, // Thicker line for better readability
             },
           ],
         },
         options: {
+          responsive: true,
           scales: {
+            x: {
+              ticks: {
+                color: '#000000', // Black labels for visibility
+                font: {
+                  size: 13, // Slightly larger font
+                },
+              },
+            },
             y: {
               beginAtZero: true,
               title: {
                 display: true,
                 text: 'Amount (RWF)',
+                color: '#000000', // Black title for visibility
+                font: {
+                  size: 15, // Slightly larger font
+                },
+              },
+              ticks: {
+                color: '#000000', // Black tick labels for better readability
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              labels: {
+                color: '#000000', // Black legend text for readability
+                font: {
+                  size: 14,
+                },
+              },
+            },
+            tooltip: {
+              enabled: true,
+              callbacks: {
+                label: function (tooltipItem) {
+                  return `${tooltipItem.raw.toLocaleString()} RWF`;
+                },
               },
             },
           },
         },
-      },
+      }
     );
+    
+    
 
     const paymentDistributionChart = new Chart(
       document.getElementById('paymentDistributionChart'),
@@ -124,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
               label: 'Payment Distribution (RWF)',
               data: Object.values(transactionTypes),
-              backgroundColor: ['#36a2eb', '#ff6384'],
+              backgroundColor: ['#36a2eb', '#ff6384'], // Restored original colors
             },
           ],
         },
