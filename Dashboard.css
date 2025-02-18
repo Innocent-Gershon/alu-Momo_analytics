@@ -5,7 +5,9 @@
   justify-content: center; 
   gap: 10px; 
   color: #0601339a;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 .logo {
   height: 50px; 
@@ -19,11 +21,12 @@ body {
 }
 
 header {
-  background-color: #A9A9A9;
   color: white;
   padding: 1rem;
   text-align: center;
+  background-image: linear-gradient(to left, hsl(192, 51%, 83%), #fd6880);
 }
+
 
 .filters {
   display: flex;
